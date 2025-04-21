@@ -10,6 +10,8 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log("📥 redirect 진입:", { email, university, company, type, link });
+
     await fetch(scriptUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
