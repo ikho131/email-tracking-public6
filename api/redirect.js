@@ -3,7 +3,7 @@ export default async function handler(req, res) {
   const linkRaw = req.query.link || "";
   const link = decodeURIComponent(decodeURIComponent(linkRaw)); // ✅ 이중 디코딩
 
-  const scriptUrl = "https://script.google.com/macros/s/AKfycbyNYsFiOTNachZgvExnaut6c4Mx_GuMw3TyoOY3QZ6K3sH7rMeAQ3tXH_lxwo_Ee43ikw/exec";
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbx2EVqvYwqPFu2pqVAxTRC3BMjv-RQeQW159mpusGN4pUJIy_PKmNhDNiIq1i151dFxdA/exec";
 
   console.log("🔀 [REDIRECT] 요청 수신됨");
   console.log("받은 쿼리값:", { email, university, company, type, link, sentAt });
